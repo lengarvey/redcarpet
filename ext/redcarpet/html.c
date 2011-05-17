@@ -144,7 +144,7 @@ rndr_blockcode(struct buf *ob, struct buf *text, struct buf *lang, void *opaque)
 
 	if (lang && lang->size) {
 		size_t i, cls;
-		BUFPUTSL(ob, "<pre><code class=\"");
+		BUFPUTSL(ob, "<pre class=\"");
 
 		for (i = 0, cls = 0; i < lang->size; ++i, ++cls) {
 			while (i < lang->size && isspace(lang->data[i]))
@@ -170,7 +170,7 @@ rndr_blockcode(struct buf *ob, struct buf *text, struct buf *lang, void *opaque)
 	if (text)
 		attr_escape(ob, text->data, text->size);
 
-	BUFPUTSL(ob, "</code></pre>\n");
+	BUFPUTSL(ob, "</pre>\n");
 }
 
 /*
