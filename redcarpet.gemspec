@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.date = '2011-05-17'
   s.email = 'vicent@github.com'
   s.homepage = 'http://github.com/tanoku/redcarpet'
-  s.authors = ["Natacha Porté", "Vicent Martí"]
+  s.authors = ["Natacha Porte", "Vicent Marti"]
   # = MANIFEST =
   s.files = %w[
     COPYING
